@@ -1,0 +1,10 @@
+name: patch-workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check-kernel
+        run:  |
+             uname -r
+             apt-get update
